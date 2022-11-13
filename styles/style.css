@@ -265,25 +265,6 @@
   color: #f2f2f2;
 }
 
-.section-title_theme-dark {
-  width: 60%;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
-  margin: auto;
-}
-
-.section-subtitle_theme-dark {
-  width: 60%;
-  text-align: center;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  margin: auto;
-  margin-top: 20px;
-}
-
 .table_theme-dark {
   display: flex;
   flex-wrap: wrap;
