@@ -1,3 +1,7 @@
+html {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -6,7 +10,6 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: #f2f2f2;
 }
 
@@ -24,7 +27,7 @@
 }
 
 .logo {
-  background: url(/images/logo_place_header.svg);
+  background: url(../images/logo_place_header.svg);
   width: 228px;
   height: 32px;
 }
@@ -245,32 +248,14 @@
 /*Использование модификатора для
 блока digits*/
 .section-title_theme-dark {
-  width: 60%;
-  text-align: center;
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 1.15;
-  margin: auto;
   color: #f2f2f2;
 }
 
 .section-subtitle_theme-dark {
-  width: 60%;
-  text-align: center;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 34px;
-  margin: auto;
-  margin-top: 20px;
   color: #f2f2f2;
 }
 
 .table_theme-dark {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 1100px;
-  margin: auto;
   padding-bottom: 90px;
 }
 
@@ -281,19 +266,10 @@
 }
 
 .table__heading_theme-dark {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0px;
   color: #f2f2f2;
 }
 
 .table__text_theme-dark {
-  margin: 0px;
-  padding-top: 20px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
   color: #f2f2f2;
 }
 
@@ -330,7 +306,7 @@
 }
 
 .logo_place_footer {
-  background: url(/images/logo_place_footer.svg);
+  background: url(../images/logo_place_footer.svg);
   width: 228px;
   height: 32px;
 }
@@ -365,6 +341,9 @@
   font-weight: normal;
   color: #f2f2f2;
   padding-bottom: 16px;
+  padding-left: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .footer__column_content-social {
@@ -380,4 +359,7 @@
   font-weight: normal;
   color: #f2f2f2;
   padding-bottom: 16px;
+  padding-left: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
