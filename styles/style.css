@@ -7,25 +7,396 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
 .header {
+  display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 64px;
   /* выше установили ограничения для секции */
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+.logo {
+  background: url(/images/logo_place_header.svg);
+  width: 228px;
+  height: 32px;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+/*Первый заголовок*/
+.header__title {
+  width: 730px;
+  font-size: 102px;
+  font-weight: 600;
+  line-height: 96px;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+}
+
+/*Абзац с текстом*/
+.header__subtitle {
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  width: 388px;
+  z-index: 2;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+/*Картинка с ребенком*/
+.header__main-illustration {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 768px;
+  height: 608px;
+  z-index: 1;
+}
+
+/*Синий квадрат*/
+.header__square-pic {
+  position: absolute;
+  right: 0px;
+  top: 64px;
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+}
+
+/*Секция description*/
+
+.description {
+  padding: 100px 0;
+  width: 80%;
+  margin: auto;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*Текст "Главные проблемы в
+обучение"*/
+.two-columns__brief {
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  line-height: 1.2;
+  margin: 0px;
+  width: 175px;
+}
+
+/*Настройка для второй колонки*/
+.two-columns__main-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 784px;
+  width: 80%;
+}
+
+/*Первый абзац+третий*/
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0px;
+}
+
+/*Второй абзац "Вывод"*/
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 30px 0px;
+}
+
+/*Секция digits*/
+/*Заголовок "Цифры и факты"*/
+.section-title {
+  width: 60%;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: auto;
+}
+
+/*Заголовок "Про учебу и мозг"*/
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1100px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.table__cell {
+  width: 250px;
+  padding-top: 60px;
+}
+
+.table__heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0px;
+}
+
+.table__text {
+  margin: 0px;
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+/*Секция feynman*/
+.feynman {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #f2f2f2;
+  height: 890px;
+  margin: 0px;
+}
+
+.feynman__title {
+  margin: 0 auto;
+  text-align: center;
+  width: 648px;
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 1.15;
+  z-index: 2;
+}
+
+.feynman__subtitle {
+  padding-top: 70px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  z-index: 2;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  color: #2f80ed;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.feynman__main-illustration {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 867px;
+  height: 637px;
+  z-index: 1;
+}
+
+/*Секция kaufman*/
+.kaufman {
+  background-color: #1f1f1f;
+  padding-top: 90px;
+  overflow: hidden;
+  position: relative;
+}
+
+/*Использование модификатора для
+блока digits*/
+.section-title_theme-dark {
+  width: 60%;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: auto;
+  color: #f2f2f2;
+}
+
+.section-subtitle_theme-dark {
+  width: 60%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  margin: auto;
+  margin-top: 20px;
+  color: #f2f2f2;
+}
+
+.section-title_theme-dark {
+  width: 60%;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  margin: auto;
+}
+
+.section-subtitle_theme-dark {
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.table_theme-dark {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1100px;
+  margin: auto;
+  padding-bottom: 90px;
+}
+
+.table__cell_theme-dark {
   width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  padding-top: 80px;
+  z-index: 2;
+}
+
+.table__heading_theme-dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0px;
+  color: #f2f2f2;
+}
+
+.table__text_theme-dark {
+  margin: 0px;
+  padding-top: 20px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #f2f2f2;
+}
+
+.kaufman__triangle {
+  z-index: 1;
+  position: absolute;
+  right: -210px;
+  top: 0px;
+  width: 877px;
+  height: 877px;
+}
+
+/*Последний блок*/
+.footer {
+  background-color: #1f1f1f;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer__columns {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+}
+
+.footer__column_content-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350px;
+  flex-basis: 711px;
+}
+
+.logo_place_footer {
+  background: url(/images/logo_place_footer.svg);
+  width: 228px;
+  height: 32px;
+}
+
+.footer__author {
+  color: #f2f2f2;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 18px 0px;
+}
+
+.footer__column_content-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.footer_column-heading {
+  padding-bottom: 20px;
+  margin: 0px;
+  color: #f2f2f2;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer__column-link {
+  list-style-type: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #f2f2f2;
+  padding-bottom: 16px;
+}
+
+.footer__column_content-social {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.footer__social-icon {
+  list-style-type: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #f2f2f2;
+  padding-bottom: 16px;
 }
