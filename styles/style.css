@@ -38,7 +38,6 @@ html {
   left: 64px;
 }
 
-/*Первый заголовок*/
 .header__title {
   width: 730px;
   font-size: 102px;
@@ -49,7 +48,6 @@ html {
   margin: 0;
 }
 
-/*Абзац с текстом*/
 .header__subtitle {
   position: absolute;
   bottom: 30px;
@@ -66,7 +64,6 @@ html {
   text-decoration: none;
 }
 
-/*Картинка с ребенком*/
 .header__main-illustration {
   position: absolute;
   right: 0px;
@@ -76,7 +73,6 @@ html {
   z-index: 1;
 }
 
-/*Синий квадрат*/
 .header__square-pic {
   position: absolute;
   right: 0px;
@@ -85,8 +81,6 @@ html {
   width: 568px;
   background-color: #2f80ed;
 }
-
-/*Секция description*/
 
 .description {
   padding: 100px 0;
@@ -100,8 +94,6 @@ html {
   justify-content: space-between;
 }
 
-/*Текст "Главные проблемы в
-обучение"*/
 .two-columns__brief {
   font-size: 18px;
   font-weight: normal;
@@ -111,7 +103,6 @@ html {
   width: 175px;
 }
 
-/*Настройка для второй колонки*/
 .two-columns__main-text {
   display: flex;
   flex-direction: column;
@@ -119,7 +110,6 @@ html {
   width: 80%;
 }
 
-/*Первый абзац+третий*/
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
@@ -127,7 +117,6 @@ html {
   margin: 0px;
 }
 
-/*Второй абзац "Вывод"*/
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
@@ -135,8 +124,6 @@ html {
   margin: 30px 0px;
 }
 
-/*Секция digits*/
-/*Заголовок "Цифры и факты"*/
 .section-title {
   width: 60%;
   text-align: center;
@@ -146,7 +133,6 @@ html {
   margin: auto;
 }
 
-/*Заголовок "Про учебу и мозг"*/
 .section-subtitle {
   width: 60%;
   text-align: center;
@@ -186,7 +172,6 @@ html {
   font-weight: normal;
 }
 
-/*Секция feynman*/
 .feynman {
   display: flex;
   flex-direction: column;
@@ -237,7 +222,6 @@ html {
   z-index: 1;
 }
 
-/*Секция kaufman*/
 .kaufman {
   background-color: #1f1f1f;
   padding-top: 90px;
@@ -245,8 +229,6 @@ html {
   position: relative;
 }
 
-/*Использование модификатора для
-блока digits*/
 .section-title_theme-dark {
   color: #f2f2f2;
 }
@@ -282,7 +264,6 @@ html {
   height: 877px;
 }
 
-/*Последний блок*/
 .footer {
   background-color: #1f1f1f;
   margin: auto;
