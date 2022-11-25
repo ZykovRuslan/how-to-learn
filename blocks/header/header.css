@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 64px;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
