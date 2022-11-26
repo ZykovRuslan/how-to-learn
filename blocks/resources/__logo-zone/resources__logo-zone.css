@@ -3,4 +3,6 @@
     margin: auto;
     padding-top: 80px;
     padding-bottom: 217px;
+    display: flex;
+    justify-content: space-around;
 }
