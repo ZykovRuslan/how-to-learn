@@ -9,9 +9,11 @@
 Так же для меня было полезно разобраться в структуре организации файлов по методологии БЭМ. На примере этого проекта можно понять логику организации файлов и обращения к ним через @import.
 
 ---
-Для связи
-<div id="badges">
-  <a href="https://vk.com/r_u_sl_i_k">
-  <img src="https://img.shields.io/badge/VK-вконтакте-blue?logo=vkontakte&logoColor=white&style=for-the-badge" alt="vkontakte"/>
+
+## Для связи
+  <a href="https://linkedin.com/in/ruslan-zykov/">
+    <img src="https://img.shields.io/badge/Linkedin-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" width="120"/>
   </a>
-</div>
+  <a href="https://vk.com/r_u_sl_i_k">
+    <img src="https://img.shields.io/badge/Vkontakte-blue?style=for-the-badge&logo=vk&logoColor=white" alt="VKontakte Badge" width="130"/>
+  </a>
